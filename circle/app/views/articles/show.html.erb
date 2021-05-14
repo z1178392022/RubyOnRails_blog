@@ -9,6 +9,11 @@
   <%= @article.text %>
 </p>
  
+<video width="400px" height="auto" controls>
+  <source src=" <%= @article.movie %>" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 <h2>Comments</h2>
 <%= render @article.comments %>
  
